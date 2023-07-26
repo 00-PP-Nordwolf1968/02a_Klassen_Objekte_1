@@ -9,22 +9,30 @@ public class App {
         // cat -- Referenzvariable
        
         Cat cat1 = new Cat();
-        System.out.println("Blick von aussen: " + cat1);
-        cat1.tellYourAdress();
+        output("Blick von aussen: " + cat1);
+        output(cat1.tellYourAdress());
 
-        cat1.testObj();
+        // cat1.testObj();
  
-        Cat.testClass();
+        // Cat.testClass();
 
-        System.out.println( Math.abs(-1));
-        System.out.println("------------------------------------------");
+        // System.out.println( Math.abs(-1));
 
-        // Cat cat2 = new Cat();
-        // System.out.println("Blick von aussen: " + cat2);
-        // cat2.tellYourAdress();
+        output("------------------------------------------");
+
+        Cat cat2 = new Cat();
+        output("Blick von aussen: " + cat2);
+        output(cat2.tellYourAdress());
+
+            
+        }
+
+        public static void output(String outputData) {
+            System.out.println(outputData);
+        }
+
     }
 
    
 
-}
 
