@@ -8,6 +8,11 @@ public class Cat {
          System.out.println("Blick von innen : " + this);
     }
 
-
-
+public void testObj() {
+    System.out.println("Gruß aus dem Objekt" + this);
+}
+public static void testClass() {
+    System.out.println("Gruß aus der Klasse");
+    
+}
 }
