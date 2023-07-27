@@ -19,7 +19,12 @@ public class Cat {
     }
 
     public String getFirstName() {
-        return firstName;
+         if (getPermission()) {                 // Rechtevergabe
+            return firstName;
+                   
+        } else {
+            return "Sorry, no permission";
+        }
     }
 
     public void setFirstName(String firstName) {
@@ -42,5 +47,9 @@ public class Cat {
         this.age = age;
     }
     
-    
+   private boolean getPermission() {
+      return true;
+
+   }
+
 }
