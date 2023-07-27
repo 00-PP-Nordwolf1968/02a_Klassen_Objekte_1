@@ -4,9 +4,11 @@ public class Cat {
     
     // Felder (fields) / Attribute (attributes) / Eigenschaften (property)
     
-    public String firstName;
-    public String furColor;
-    public int age;
+    // private = nur die eigene Klasse darf sehen, unkontrolliertes Schreiben wird verhindert
+    
+    private String firstName;
+    private String furColor;
+    private int age;
 
    
 
@@ -16,14 +18,29 @@ public class Cat {
         this.age = age;
     }
 
-    public String tellYourName() {
-        return this.firstName;
-        
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void changeName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
-        
     }
+
+    public String getFurColor() {
+        return furColor;
+    }
+
+    public void setFurColor(String furColor) {
+        this.furColor = furColor;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
     
 }

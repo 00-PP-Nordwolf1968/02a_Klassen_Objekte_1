@@ -9,24 +9,23 @@ public class App {
         Cat cat1 = new Cat("Grizabella", "white", 29);
      
 
-        // Ausgabe
-        output(cat1.tellYourName());
-        output(cat1.furColor);
+        // Ausgabe über Getter
+        output(cat1.getFirstName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge()));
 
-        // Umwandlung int in String --> Typkonvertierung
-        
-        output(Integer.toString(cat1.age));
-        // output(String.valueOf(cat1.age));        // zweite Möglichgkeit Typkonvertierung
+
 
 
         output("------------------------------------------");
 
         Cat cat2 = new Cat("Alonzo", "grey", 35);
   
-
-        output(cat2.tellYourName());
-        output(cat2.furColor);
-        output(String.valueOf(cat1.age));
+        // Ausgabe über Getter
+        output(cat2.getFirstName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));
+       
             
         }
 
