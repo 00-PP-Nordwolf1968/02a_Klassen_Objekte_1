@@ -11,12 +11,13 @@ public class App {
         Cat cat1 = new Cat();
      
 
-        cat1.firstName = "Grizabella";
+        // cat1.firstName = "Grizabella";
+        cat1.changeName("Grizabella");
         cat1.furColor = "white";
         cat1.age = 29;
 
 
-        output(cat1.firstName);
+        output(cat1.tellYourName());
         output(cat1.furColor);
 
         // Umwandlung int in String --> Typkonvertierung

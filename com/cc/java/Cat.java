@@ -9,6 +9,14 @@ public class Cat {
     public int age;
 
 
+    public String tellYourName() {
+        return this.firstName;
+        
+    }
 
+    public void changeName(String firstName) {
+        this.firstName = firstName;
+        
+    }
     
 }
