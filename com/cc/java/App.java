@@ -28,7 +28,13 @@ public class App {
 
         Cat cat2 = new Cat();
      
+        cat2.firstName = "Alonzo";
+        cat2.furColor = "grey";
+        cat2.age = 35;
 
+        output(cat2.firstName);
+        output(cat2.furColor);
+        output(String.valueOf(cat1.age));
             
         }
 
