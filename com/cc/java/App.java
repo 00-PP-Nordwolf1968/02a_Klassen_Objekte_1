@@ -9,20 +9,25 @@ public class App {
         // cat -- Referenzvariable
        
         Cat cat1 = new Cat();
-        output("Blick von aussen: " + cat1);
-        output(cat1.tellYourAdress());
+     
 
-        // cat1.testObj();
- 
-        // Cat.testClass();
+        cat1.firstName = "Grizabella";
+        cat1.furColor = "white";
+        cat1.age = 29;
 
-        // System.out.println( Math.abs(-1));
+
+        output(cat1.firstName);
+        output(cat1.furColor);
+
+        // Umwandlung int in String --> Typkonvertierung
+        output(Integer.toString(cat1.age));
+        // output(String.valueOf(cat1.age));        // zweite Möglichgkeit Typkonvertierung
+
 
         output("------------------------------------------");
 
         Cat cat2 = new Cat();
-        output("Blick von aussen: " + cat2);
-        output(cat2.tellYourAdress());
+     
 
             
         }
