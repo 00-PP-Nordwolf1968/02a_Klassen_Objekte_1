@@ -33,7 +33,7 @@ public class App {
         cat2.furColor = "grey";
         cat2.age = 35;
 
-        output(cat2.firstName);
+        output(cat2.tellYourName());
         output(cat2.furColor);
         output(String.valueOf(cat1.age));
             
