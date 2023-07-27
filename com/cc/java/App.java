@@ -4,34 +4,25 @@ public class App {
     
     public static void main(String[] args) {
 
-             /* Instanziierung Klasse --> Objekt */
-        // Cat -- Referenztyp
-        // cat -- Referenzvariable
+        // Instanziierung mit Custom Constructor
        
-        Cat cat1 = new Cat();
+        Cat cat1 = new Cat("Grizabella", "white", 29);
      
 
-        // cat1.firstName = "Grizabella";
-        cat1.changeName("Grizabella");
-        cat1.furColor = "white";
-        cat1.age = 29;
-
-
+        // Ausgabe
         output(cat1.tellYourName());
         output(cat1.furColor);
 
         // Umwandlung int in String --> Typkonvertierung
+        
         output(Integer.toString(cat1.age));
         // output(String.valueOf(cat1.age));        // zweite Möglichgkeit Typkonvertierung
 
 
         output("------------------------------------------");
 
-        Cat cat2 = new Cat();
-     
-        cat2.firstName = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
+  
 
         output(cat2.tellYourName());
         output(cat2.furColor);
